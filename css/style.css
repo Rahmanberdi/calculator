@@ -35,8 +35,19 @@ body{
     margin:10px 10px 0 10px;
 }
 .display-secondary,.display-main{
-    width:300px;
+    width:280px;
     height: 60px;
+}
+.display-main{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 0 10px;
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+
+
 }
 
 .calc-buttons{
@@ -57,7 +68,7 @@ body{
     height: 50px;
     width: 70px;
 }
-.calc-buttons .operator{
+.calc-buttons .operator,.calc-buttons #dot{
     background-color: #26bbbf;
     color:black;
 }
@@ -67,10 +78,10 @@ body{
 .calc-buttons .number:active{
     background-color: #255da8;
 }
-.calc-buttons .operator:hover{
+.calc-buttons .operator:hover,.calc-buttons #dot:hover{
     background-color: #3adce1;
 }
-.calc-buttons .operator:active{
+.calc-buttons .operator:active,.calc-buttons #dot:active{
     background-color: #12a4aa;
 }
 .calc-buttons .operator svg{
