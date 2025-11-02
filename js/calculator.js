@@ -100,7 +100,7 @@
         if (key === "Enter") key = '=';
         else if (key === "Backspace") key = 'backspace';
         else if (key === "Delete") key = 'C';
-        if (calc_ops.includes(key) || calc_ops.includes(key) || key === "."){
+        if (math_ops.includes(key) || calc_ops.includes(key) || key === "." || !isNaN(Number(key))){
             handleInputKey(key);
         }
 
