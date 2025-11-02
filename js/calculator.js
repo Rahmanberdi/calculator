@@ -100,7 +100,7 @@
         if (key === "Enter") key = '=';
         else if (key === "Backspace") key = 'backspace';
         else if (key === "Delete") key = 'C';
-        if (math_ops.includes(value) || calc_ops.includes(value) || value === "."){
+        if (math_ops.includes(key) || calc_ops.includes(key) || value === "."){
             handleInputKey(key);
         }
 
